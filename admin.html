@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HYPEX Admin</title><link rel="stylesheet" href="styles.css"></head>
+<body class="admin-page">
+<div id="login" class="auth"><div class="panel"><div class="brand">HYPEX</div><h1>Admin Panel</h1><p>Sign in to manage the website.</p><input id="email" type="email" placeholder="Email"><input id="password" type="password" placeholder="Password"><button id="loginBtn" class="btn primary">Sign in</button><p id="loginMsg" class="msg"></p></div></div>
+<div id="dashboard" hidden><header class="nav"><a class="brand" href="index.html">HYPEX</a><span class="admin-title">CONTROL CENTER</span><button id="logout" class="btn ghost">Logout</button></header><main class="admin-main">
+<div class="admin-top"><div><p class="eyebrow">LIVE CONTROL</p><h1>Website Dashboard</h1></div><button id="save" class="btn primary">Save Changes</button></div>
+<p id="saveMsg" class="msg"></p>
+<section class="form-section"><h2>Hero & About</h2><div class="form-grid">
+<label>Hero eyebrow<input data-key="heroEyebrow"></label><label>Hero title<input data-key="heroTitle"></label><label class="wide">Hero subtitle<textarea data-key="heroSubtitle"></textarea></label><label>About title<input data-key="aboutTitle"></label><label class="wide">About text<textarea data-key="aboutText"></textarea></label><label class="wide">Vision<textarea data-key="vision"></textarea></label><label class="wide">Mission<textarea data-key="mission"></textarea></label><label class="wide">Core values (one per line)<textarea data-key="values"></textarea></label></div></section>
+<section class="form-section"><h2>Live Statistics</h2><div class="form-grid"><label>Market Cap<input data-key="marketCap"></label><label>Holders<input data-key="holders"></label><label>Transactions<input data-key="transactions"></label><label>Burned<input data-key="burned"></label></div></section>
+<section class="form-section"><h2>Tokenomics</h2><div class="form-grid"><label class="wide">Intro<textarea data-key="tokenomicsIntro"></textarea></label><label>Total Supply<input data-key="totalSupply"></label><label>Circulating<input data-key="circulating"></label><label>Burn Rate<input data-key="burnRate"></label></div></section>
+<section class="form-section"><h2>Ecosystem</h2><div id="ecoEditor"></div><button id="addEco" class="btn ghost">+ Add ecosystem item</button></section>
+<section class="form-section"><h2>Roadmap</h2><div id="roadmapEditor"></div><button id="addPhase" class="btn ghost">+ Add phase</button></section>
+<section class="form-section"><h2>Community & Contract</h2><div class="form-grid"><label>Telegram URL<input data-key="telegram"></label><label>X URL<input data-key="twitter"></label><label class="wide">Contract Address<input data-key="contract"></label><label class="wide">Footer text<input data-key="footerText"></label></div></section>
+</main></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="admin.js"></script></body></html>
